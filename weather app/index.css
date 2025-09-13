@@ -1,0 +1,75 @@
+body {
+      font-family: Arial, sans-serif;
+      background: url('https://static.vecteezy.com/system/resources/previews/050/902/936/non_2x/tranquil-ocean-horizon-with-sunburst-and-fluffy-clouds-photo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      animation: fadeInBody 2s ease-in;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .weather-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 300px;
+      transform: scale(0.9);
+      animation: scaleUp 0.5s ease-out forwards;
+    }
+
+    @keyframes scaleUp {
+      to {
+        transform: scale(1);
+      }
+    }
+
+    input[type="text"] {
+      padding: 0.5rem;
+      width: 80%;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      transition: border 0.3s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #4facfe;
+      outline: none;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      background-color: #4facfe;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #00c6ff;
+      transform: scale(1.05);
+    }
+
+    .result {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      opacity: 0;
+      animation: fadeInResult 1s ease forwards;
+    }
+
+    @keyframes fadeInResult {
+      to {
+        opacity: 1;
+      }
+    }
