@@ -1,6 +1,6 @@
 body {
       font-family: Arial, sans-serif;
-      background: url('https://static.vecteezy.com/system/resources/previews/050/902/936/non_2x/tranquil-ocean-horizon-with-sunburst-and-fluffy-clouds-photo.jpg') no-repeat center center fixed;
+      background: url("weather.jpg")  no-repeat center center fixed;
       background-size: cover;
       display: flex;
       justify-content: center;
